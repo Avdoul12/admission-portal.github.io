@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Admission Form */
+.admission-form {
+    padding: 40px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.admission-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.admission-form label {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.admission-form input, .admission-form select, .admission-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.admission-form button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.admission-form button:hover {
+    background-color: #45a049;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admission-form {
+        padding: 20px;
+    }
+
+    .hero-section h2 {
+        font-size: 1.8em;
+    }
+
+    .admission-form h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .admission-form input, .admission-form select, .admission-form textarea {
+        font-size: 0.9em;
+    }
+
+    .admission-form button {
+        font-size: 1em;
+    }
+}
